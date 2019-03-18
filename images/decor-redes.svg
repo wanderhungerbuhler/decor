@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="133" height="61" viewBox="0 0 133 61">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #fff;
+        font-size: 45px;
+        font-family: OpenSans-Bold, Open Sans;
+        font-weight: 700;
+      }
+
+      .cls-1 {
+        letter-spacing: -0.05em;
+      }
+
+      .cls-2 {
+        fill: #2ed297;
+      }
+
+      .cls-3 {
+        letter-spacing: -0.02em;
+      }
+    </style>
+  </defs>
+  <g id="Agrupar_65" data-name="Agrupar 65" transform="translate(-30 123)">
+    <text id="ecor" class="cls-1" transform="translate(71 -75)"><tspan x="0" y="0">ecor</tspan></text>
+    <circle id="Elipse_2" data-name="Elipse 2" class="cls-2" cx="14" cy="14" r="14" transform="translate(30 -106)"/>
+    <text id="D" class="cls-3" transform="translate(41 -75)"><tspan x="0" y="0">D</tspan></text>
+  </g>
+</svg>
