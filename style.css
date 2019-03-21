@@ -1,0 +1,58 @@
+/*
+Theme Name: Decor
+Theme URI: https://www.whfdev.com.br/decor
+Author: Wander Hungerbühler
+Author URI: https://www.whfdev.com.br
+Description: Plataforma EAD
+Version: 1.0
+*/
+
+*{margin:0; padding:0; box-sizing: border-box;}
+img{max-width: 100%;}
+body{font-family: 'Open Sans', sans-serif; background: #18191D;}
+
+/* LOGIN DASHBOARD */
+.login{width:350px; margin:130px auto;}
+.logo{width: 250px; height: 100px; background: url('./images/logo.svg') no-repeat center center; background-size:100%;
+  margin:0 auto;}
+
+.form-login{display: flex; flex-direction: column; margin-top:100px;}
+::-webkit-input-placeholder{color:#434343;}
+.inputs-login{width: 100%; padding:1em; border:1px solid transparent; background:#1F2025; border-radius: 7px;  margin:5px 0px; 
+  color:#434343; outline: none;}
+.inputs-login:focus{border:1px solid #2ED297;}
+.btn-acesso{width: 100%; background:#2ED297; color:#fff; font-weight:bold; text-transform:uppercase; padding:1em; border:0;
+  border-radius: 7px;  margin:5px 0px; cursor: pointer;}
+
+/* MENU */
+.menu{width:100%; height: 70px; display: flex; justify-content:space-around;
+  align-items: center;}
+.menu .logo{width: 130px; margin:0;}
+.btn-login{width:100px; height:30px; border:0; border-radius: 10px; color:#fff; background: #2ED297;
+  font-weight: bold; box-shadow: 0 0 30px #000000; cursor: pointer;}
+.btn-login a{color:#fff; text-decoration: none;}
+
+/* SECTIONS COURSES */
+.section-courses{width: 77.68%; margin:100px auto;}
+.courses{min-height:280px; height: auto; border-radius: 10px; margin-top:50px;} /*background: url('./images/mac.jpg') no-repeat center center; 
+background-size:cover;*/ 
+.courses::before{position: absolute; content:""; width: 10px; height: 150px; margin-top:75px; margin-left:-5px;
+  background: #2ED297; display: block; border-radius:10px;}
+.courses-desc{z-index: 1; position: relative; padding:2em 2em; text-shadow: 0 0 10px #000;}
+.courses h1{color:#fff; font-weight: 800; font-size:2em; width: 52%;}
+.courses p{font-size: .9em; color:#fff; width: 50%; text-align: justify;}
+.courses span{color:#2ED297; font-weight: 800; text-transform: uppercase;}
+
+/* LIST TAGS COURSES */
+.list-tags{width:100%; display: flex; flex-wrap: wrap; align-items: center; margin-top:10px;}
+.list-tags li{list-style: none; padding:.2em 1em; margin:7px 7px 0px 0px; background:#1F2025; 
+  color:#fff; text-align:center; border-radius:50px; font-size:.8em;}
+.btn-comecar{text-decoration: none; color:#fff; display: flex; 
+  justify-content: space-evenly; align-items: center;}
+.btn-comecar::before{content:""; width:20px; height: 20px; background: url('./images/play.svg')no-repeat center center;
+  display: block;}
+
+/* MOBILE */
+@media (max-width: 640px){
+  .courses h1, .courses p{width:100%;}
+}

@@ -22,7 +22,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Decor | Plataforma EAD</title>
+  <title><?php bloginfo('name'); ?></title>
   <meta name="theme-color" content="#18191D">
 	<meta name="apple-mobile-web-app-status-bar-style" content="#18191D">
 	<meta name="msapplication-navbutton-color" content="#18191D">
@@ -40,7 +40,7 @@
 	<meta name="author" content="Wander Hungerbühler - www.whfdev.com.br">
 	<link rel="shortcut icon" href="./images/decorfavicon.ico" /> 
   <meta property="og:type" content="Website"> 
-	<meta property="og:title" content="Decor"> 
+	<meta property="og:title" content="<?php bloginfo('name'); ?>"> 
 	<meta property="og:description" content="Decor é uma plataforma EAD focado no desenvolvimento de produtos online. 
   Seu objetivo é a criação de materiais online como: vídeos, pdfs e exercícios."/>
 	<meta property="og:image" content="./images/decor-redes.svg" />
@@ -48,51 +48,15 @@
   <meta property="og:site_name" content="https://www.whfdev.com.br/decor"/>
   <meta property="og:locale" content="pt_BR" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
+
+  <!-- Inicio WordPress Header -->
+  <?php wp_head(); ?>
+  <!-- Final WordPress Header -->
 </head>
 <body>
   
   <nav class="menu">
     <div class="logo"></div>
-    <button class="btn-login"><a href="./login.html">Fazer Login</a></button>
+    <button class="btn-login"><a href="/decor/login/">Fazer Login</a></button>
   </nav>
-
-  <section class="section-courses">
-    <article class="courses">
-      <div class="courses-desc">
-        <span>Curso</span>
-        <h1>Métodos Aplicáveis na Computação</h1>
-        <p>
-          No curso de Métodos Aplicáveis na Computação você terá a oportunidade de dar o passo mais importante
-          em desenvolver novas metodologias para tirar o melhor proveito na sua programação e até mesmo na sua 
-          capacidade de absorção de conteúdo.
-        </p>
-        <ul class="list-tags">
-          <li><a href="login.html" class="btn-comecar">Começar</a></li>
-          <li>50 Aulas em HD</li>
-          <li>24h de Vídeo</li>
-          <li>Certificado de Conclusão</li>
-        </ul>
-      </div>
-    </article>
-
-    <article class="courses">
-      <div class="courses-desc">
-        <span>Curso</span>
-        <h1>Webdesigner de Forma Correta</h1>
-        <p>
-          O curso de Webdesigner tem o total objetivo em ensinar você aluno a utilizar o melhor das ferramentas. 
-          Os layouts e métodos ensinados neste curso irão te ensinar o real motivo por trás da produtividade.
-        </p>
-        <ul class="list-tags">
-          <li><a href="login.html" class="btn-comecar">Começar</a></li>
-          <li>50 Aulas em HD</li>
-          <li>24h de Vídeo</li>
-          <li>Certificado de Conclusão</li>
-        </ul>
-      </div>
-    </article>
-  </section>
-
-</body>
-</html>
