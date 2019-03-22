@@ -3,6 +3,18 @@
 get_header(); 
 ?>
 
+<style>
+  .courses{
+    background: url('<?php the_field("background_courses"); ?>') no-repeat center center; 
+    background-size:cover;  
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+</style>
+
+
   <?php 
     $args = array(
       'post_type' => 'cursos',

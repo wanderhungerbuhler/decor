@@ -34,12 +34,10 @@ function custom_post_type_cursos() {
 		'capability_type' => 'post',
 		'map_meta_cap' => true,
 		'hierarchical' => false,
-
-		
 		'rewrite' => array('slug' => 'cursos', 'with_front' => true),
 		'query_var' => true,
 		'supports' => array('title', 'editor', 'page-attributes','post-formats'),
-		
+
 		'labels' => array (
 			'name' => 'Cursos',
 			'singular_name' => 'Curso',
@@ -58,5 +56,6 @@ function custom_post_type_cursos() {
 	));
 }
 add_action('init', 'custom_post_type_cursos');
+
 
 ?>
